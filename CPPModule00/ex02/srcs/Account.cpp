@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 15:18:50 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/18 18:01:42 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/18 20:30:03 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void	Account::displayAccountsInfos(void)
 	std::cout << " account:" << _nbAccounts
 		<< ";total:" << _totalAmount
 		<< ";deposits:" << _totalNbDeposits
-		<< ";withdrawls:" << _totalNbWithdrawals << std::endl;
+		<< ";withdrawals:" << _totalNbWithdrawals << std::endl;
 }
 
 void	Account::makeDeposit(int deposit)
@@ -96,7 +96,7 @@ void	Account::makeDeposit(int deposit)
 	_nbDeposits++;
 	_displayTimestamp();
 	std::cout << " index:" << _accountIndex
-		<< ";p_amout:" << p_amount
+		<< ";p_amount:" << p_amount
 		<< ";deposit:" << deposit
 		<< ";amount" << _amount
 		<< ";nb_deposits:" << _nbDeposits << std::endl;
@@ -115,7 +115,7 @@ bool	Account::makeWithdrawal(int withdrawal)
 		_nbWithdrawals++;
 		_displayTimestamp();
 		std::cout << " index:" << _accountIndex
-			<< ";p_amout:" << p_amount
+			<< ";p_amount:" << p_amount
 			<< ";deposit:" << withdrawal
 			<< ";amount" << _amount
 			<< ";nb_deposits:" << _nbWithdrawals << std::endl;
@@ -125,7 +125,7 @@ bool	Account::makeWithdrawal(int withdrawal)
 	{
 		_displayTimestamp();
 		std::cout << " index:" << _accountIndex
-			<< ";p_amout:" << p_amount
+			<< ";p_amount:" << p_amount
 			<< "withdrawl:refused" << std::endl;
 	}
 	return (false);
