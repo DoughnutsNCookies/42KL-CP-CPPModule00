@@ -98,7 +98,7 @@ void	Account::makeDeposit(int deposit)
 	std::cout << " index:" << _accountIndex
 		<< ";p_amount:" << p_amount
 		<< ";deposit:" << deposit
-		<< ";amount" << _amount
+		<< ";amount:" << _amount
 		<< ";nb_deposits:" << _nbDeposits << std::endl;
 }
 
