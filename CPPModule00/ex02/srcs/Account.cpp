@@ -6,14 +6,13 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 15:18:50 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/18 17:49:54 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/18 18:01:42 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Account.hpp"
 #include <iostream>
 #include <ctime>
-#include <thread>
 
 int	Account::_nbAccounts = 0;
 int	Account::_totalAmount = 0;
