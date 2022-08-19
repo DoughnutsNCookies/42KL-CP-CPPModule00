@@ -26,7 +26,6 @@ class	Phonebook
 		Phonebook();
 		virtual	~Phonebook();
 		void	add_contact();
-		// void	print_contact();
 		void	search_contact();
 	private:
 		Contact	_contacts[MAX_CONTACTS];
