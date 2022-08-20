@@ -30,7 +30,6 @@ class	Contact
 		std::string	get_lastname();
 		std::string	get_nickname();
 		int			get_empty();
-
 	private:
 		std::string	_firstname;
 		std::string	_lastname;
