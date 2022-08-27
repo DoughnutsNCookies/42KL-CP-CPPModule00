@@ -36,4 +36,5 @@ int	main(void)
 		if (command == "EXIT")
 			break ;
 	}
+	return (0);
 }
