@@ -23,7 +23,7 @@ struct str
 {
 	std::string string;
 };
-str		classes[100];
+str		classes[7];
 int		classes_max = 0;
 int		classes_index = 0;
 
