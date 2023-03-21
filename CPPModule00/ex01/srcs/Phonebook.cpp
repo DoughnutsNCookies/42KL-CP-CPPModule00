@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.cpp                                      :+:      :+:    :+:   */
+/*   Phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 11:20:08 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/18 15:17:36 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/21 21:10:26 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ static void	get_data(std::string *data)
 		std::cout << std::endl;
 		std::exit(0);
 	}
+	while (data->find('\t') != std::string::npos)
+		data->replace(data->find('\t'), 1, "    ");
 }
 
 /* Gets data from the user input and sets them into the Contact Class */
@@ -53,8 +55,7 @@ void	Phonebook::add_contact(void)
 	get_data(&phonenumber);
 	std::cout << "Enter darkest secret: ";
 	get_data(&darkestsecret);
-	_contacts[_index].set_contact(firstname, lastname, nickname,
-		phonenumber, darkestsecret);
+	_contacts[_index].set_contact(firstname, lastname, nickname, phonenumber, darkestsecret);
 	_index = (_index + 1) % MAX_CONTACTS;
 }
 
